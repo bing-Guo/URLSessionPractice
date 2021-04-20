@@ -10,7 +10,6 @@ NSURLSessionTask *fetchImageWithCallbackTask;
 
 - (void)fetchGetResponse {
     NSURL *url = [NSURL URLWithString:@"http://httpbin.org/get"];
-//    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/api/front/article/list?page=1"];
 
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"GET"];
