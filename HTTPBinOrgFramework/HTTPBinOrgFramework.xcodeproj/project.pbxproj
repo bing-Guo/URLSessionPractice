@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		FCCFD45E262BD1120009CB6E /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FCCFD45F262BD1120009CB6E /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				FCCFD465262BD12C0009CB6E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		FCCFD440262BCD4D0009CB6E /* HTTPBinOrgFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCFD436262BCD4D0009CB6E /* HTTPBinOrgFramework.framework */; };
+		FCCFD445262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD444262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.m */; };
+		FCCFD447262BCD4D0009CB6E /* HTTPBinOrgFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCFD439262BCD4D0009CB6E /* HTTPBinOrgFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCCFD455262BCF8E0009CB6E /* HTTPBinOrg.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD454262BCF8E0009CB6E /* HTTPBinOrg.m */; };
+		FCCFD516262BDC900009CB6E /* HTTPBinOrg.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCFD458262BCFAE0009CB6E /* HTTPBinOrg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCCFD441262BCD4D0009CB6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCCFD42D262BCD4D0009CB6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCCFD435262BCD4D0009CB6E;
+			remoteInfo = HTTPBinOrgFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCCFD436262BCD4D0009CB6E /* HTTPBinOrgFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPBinOrgFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCFD439262BCD4D0009CB6E /* HTTPBinOrgFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPBinOrgFramework.h; sourceTree = "<group>"; };
+		FCCFD43A262BCD4D0009CB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCFD43F262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPBinOrgFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCFD444262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPBinOrgFrameworkTests.m; sourceTree = "<group>"; };
+		FCCFD446262BCD4D0009CB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCFD454262BCF8E0009CB6E /* HTTPBinOrg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPBinOrg.m; sourceTree = "<group>"; };
+		FCCFD458262BCFAE0009CB6E /* HTTPBinOrg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPBinOrg.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCFD433262BCD4D0009CB6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCFD43C262BCD4D0009CB6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCFD440262BCD4D0009CB6E /* HTTPBinOrgFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCCFD42C262BCD4D0009CB6E = {
+			isa = PBXGroup;
+			children = (
+				FCCFD438262BCD4D0009CB6E /* HTTPBinOrgFramework */,
+				FCCFD443262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests */,
+				FCCFD437262BCD4D0009CB6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCFD437262BCD4D0009CB6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCFD436262BCD4D0009CB6E /* HTTPBinOrgFramework.framework */,
+				FCCFD43F262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCFD438262BCD4D0009CB6E /* HTTPBinOrgFramework */ = {
+			isa = PBXGroup;
+			children = (
+				FCCFD439262BCD4D0009CB6E /* HTTPBinOrgFramework.h */,
+				FCCFD43A262BCD4D0009CB6E /* Info.plist */,
+				FCCFD458262BCFAE0009CB6E /* HTTPBinOrg.h */,
+				FCCFD454262BCF8E0009CB6E /* HTTPBinOrg.m */,
+			);
+			path = HTTPBinOrgFramework;
+			sourceTree = "<group>";
+		};
+		FCCFD443262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCCFD444262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.m */,
+				FCCFD446262BCD4D0009CB6E /* Info.plist */,
+			);
+			path = HTTPBinOrgFrameworkTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FCCFD431262BCD4D0009CB6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCFD447262BCD4D0009CB6E /* HTTPBinOrgFramework.h in Headers */,
+				FCCFD516262BDC900009CB6E /* HTTPBinOrg.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FCCFD435262BCD4D0009CB6E /* HTTPBinOrgFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCFD44A262BCD4D0009CB6E /* Build configuration list for PBXNativeTarget "HTTPBinOrgFramework" */;
+			buildPhases = (
+				FCCFD431262BCD4D0009CB6E /* Headers */,
+				FCCFD432262BCD4D0009CB6E /* Sources */,
+				FCCFD433262BCD4D0009CB6E /* Frameworks */,
+				FCCFD434262BCD4D0009CB6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTTPBinOrgFramework;
+			productName = HTTPBinOrgFramework;
+			productReference = FCCFD436262BCD4D0009CB6E /* HTTPBinOrgFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCCFD43E262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCFD44D262BCD4D0009CB6E /* Build configuration list for PBXNativeTarget "HTTPBinOrgFrameworkTests" */;
+			buildPhases = (
+				FCCFD43B262BCD4D0009CB6E /* Sources */,
+				FCCFD43C262BCD4D0009CB6E /* Frameworks */,
+				FCCFD43D262BCD4D0009CB6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCCFD442262BCD4D0009CB6E /* PBXTargetDependency */,
+			);
+			name = HTTPBinOrgFrameworkTests;
+			productName = HTTPBinOrgFrameworkTests;
+			productReference = FCCFD43F262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCFD42D262BCD4D0009CB6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FCCFD435262BCD4D0009CB6E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FCCFD43E262BCD4D0009CB6E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FCCFD45E262BD1120009CB6E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = FCCFD430262BCD4D0009CB6E /* Build configuration list for PBXProject "HTTPBinOrgFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCCFD42C262BCD4D0009CB6E;
+			productRefGroup = FCCFD437262BCD4D0009CB6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCFD435262BCD4D0009CB6E /* HTTPBinOrgFramework */,
+				FCCFD43E262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests */,
+				FCCFD45E262BD1120009CB6E /* Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCCFD434262BCD4D0009CB6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCFD43D262BCD4D0009CB6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FCCFD465262BD12C0009CB6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\nxcodebuild archive \\\n  -scheme \"${PROJECT_NAME}\" \\\n  -sdk iphoneos \\\n  -archivePath \"archives/ios_devices.xcarchive\" \\\n  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \\\n  SKIP_INSTALL=NO\n  \nxcodebuild archive \\\n  -scheme \"${PROJECT_NAME}\" \\\n  -sdk iphonesimulator \\\n  -archivePath \"archives/ios_simulators.xcarchive\" \\\n  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \\\n  SKIP_INSTALL=NO\n  \nrm -r \"build/${PROJECT_NAME}.xcframework\"\n\nxcodebuild -create-xcframework \\\n  -framework \"archives/ios_devices.xcarchive/Products/Library/Frameworks/${PROJECT_NAME}.framework\" \\\n  -framework \"archives/ios_simulators.xcarchive/Products/Library/Frameworks/${PROJECT_NAME}.framework\" \\\n  -output \"build/${PROJECT_NAME}.xcframework\"\n\nopen \"${PROJECT_DIR}/build\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCFD432262BCD4D0009CB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCFD455262BCF8E0009CB6E /* HTTPBinOrg.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCFD43B262BCD4D0009CB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCFD445262BCD4D0009CB6E /* HTTPBinOrgFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCCFD442262BCD4D0009CB6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCCFD435262BCD4D0009CB6E /* HTTPBinOrgFramework */;
+			targetProxy = FCCFD441262BCD4D0009CB6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCCFD448262BCD4D0009CB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCCFD449262BCD4D0009CB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCCFD44B262BCD4D0009CB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				INFOPLIST_FILE = HTTPBinOrgFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bing.HTTPBinOrgFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCCFD44C262BCD4D0009CB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				INFOPLIST_FILE = HTTPBinOrgFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bing.HTTPBinOrgFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCCFD44E262BCD4D0009CB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				INFOPLIST_FILE = HTTPBinOrgFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bing.HTTPBinOrgFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCCFD44F262BCD4D0009CB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				INFOPLIST_FILE = HTTPBinOrgFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bing.HTTPBinOrgFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCCFD460262BD1120009CB6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCCFD461262BD1120009CB6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCFD430262BCD4D0009CB6E /* Build configuration list for PBXProject "HTTPBinOrgFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCFD448262BCD4D0009CB6E /* Debug */,
+				FCCFD449262BCD4D0009CB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCFD44A262BCD4D0009CB6E /* Build configuration list for PBXNativeTarget "HTTPBinOrgFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCFD44B262BCD4D0009CB6E /* Debug */,
+				FCCFD44C262BCD4D0009CB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCFD44D262BCD4D0009CB6E /* Build configuration list for PBXNativeTarget "HTTPBinOrgFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCFD44E262BCD4D0009CB6E /* Debug */,
+				FCCFD44F262BCD4D0009CB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCFD45F262BD1120009CB6E /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCFD460262BD1120009CB6E /* Debug */,
+				FCCFD461262BD1120009CB6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCFD42D262BCD4D0009CB6E /* Project object */;
+}
