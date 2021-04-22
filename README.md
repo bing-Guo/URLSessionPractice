@@ -1,7 +1,9 @@
 # 目的
-練習Objective-C, NSURLSession, Block, Delegate, Framework和Testing，撰寫Web Service API（[httpbin.org](httpbin.org)）並包成SDK。
+撰寫Web Service API（[httpbin.org](httpbin.org)）並包成SDK並使用，用於練習Objective-C, NSURLSession, Block, Delegate, Framework, NSOperation, NSOperationQueue和Testing。
 
-撰寫兩種版本的練習，HttpbinFramework是用Block寫法，HTTPBinOrgFramework是用Delegate寫法，並且會取消前一次的Task。
+* HttpbinFramework: 用Block寫法
+* HTTPBinOrgFramework: 用Delegate寫法，並且會取消前一次的Task
+* OperationPractice: 使用HttpbinFramework，實作簡易UI，有一個progressView呈現進度，和一個Button負責控制，點擊Button可執行Operation，再次點擊可取消Operation Queue。
 
 # 困難
 ## 1. 錯誤`Building for iOS Simulator, but the linked and embedded framework was built for iOS.`
