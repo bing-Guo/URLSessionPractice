@@ -23,11 +23,11 @@ NSURLSessionTask *fetchImageWithCallbackTask;
 
     fetchGetResponseTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if(error) {
-            [self->delegate HTTPBinOrg:self dictionaryForGet:NULL error:error];
+            [self.delegate HTTPBinOrg:self dictionaryForGet:NULL error:error];
         } else {
             id object = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
 
-            [self->delegate HTTPBinOrg:self dictionaryForGet:object error:NULL];
+            [self.delegate HTTPBinOrg:self dictionaryForGet:object error:NULL];
         }
     }];
 
@@ -58,11 +58,11 @@ NSURLSessionTask *fetchImageWithCallbackTask;
 
     postCustomerNameTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if(error) {
-            [self->delegate HTTPBinOrg:self dictionaryForPostName:NULL error:error];
+            [self.delegate HTTPBinOrg:self dictionaryForPostName:NULL error:error];
         } else {
             id object = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
 
-            [self->delegate HTTPBinOrg:self dictionaryForPostName:object error:NULL];
+            [self.delegate HTTPBinOrg:self dictionaryForPostName:object error:NULL];
         }
     }];
 
@@ -84,17 +84,17 @@ NSURLSessionTask *fetchImageWithCallbackTask;
 
     fetchImageWithCallbackTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if(error) {
-            [self->delegate HTTPBinOrg:self image:NULL error:error];
+            [self.delegate HTTPBinOrg:self image:NULL error:error];
         } else {
             UIImage *image = [UIImage imageWithData:data];
 
-            [self->delegate HTTPBinOrg:self image:image error:NULL];
+            [self.delegate HTTPBinOrg:self image:image error:NULL];
         }
     }];
 
     [fetchImageWithCallbackTask resume];
 }
 
-@synthesize delegate;
+//@synthesize delegate;
 
 @end

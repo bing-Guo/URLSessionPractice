@@ -27,46 +27,69 @@ Httpbin *api;
 }
 
 - (void)testFetchGetResponse {
-    XCTestExpectation *expect = [self expectationWithDescription:@"Timeout."];
+    XCTestExpectation *expect = [self expectationWithDescription:@"Query timed out."];
 
     [api fetchGetResponseWithCallback:^(NSDictionary *dict, NSError *error) {
-        BOOL condition1 = [dict[@"url"] isEqual:@"http://httpbin.org/get"];
-
+        NSString *url = dict[@"url"];
         NSMutableDictionary *argsDict = [dict valueForKey:@"args"];
-        BOOL condition2 = ([argsDict count] == 0);
+        NSUInteger argsDictCount = [argsDict count];
 
+        BOOL condition1 = [url isEqual:@"http://httpbin.org/get"];
+        BOOL condition2 = (argsDictCount == 0);
         BOOL result = condition1 && condition2;
 
         XCTAssert(result,
-                  @"Occurred error. condition1: %@, condition2: %lu",
-                  dict[@"url"],
-                  (unsigned long)[argsDict count]);
+                  @"An error occurred. URL: %@, argsDictCount: %lu",
+                  url,
+                  argsDictCount);
 
         [expect fulfill];
     }];
 
     [self waitForExpectationsWithTimeout:5 handler:^(NSError * _Nullable error) {
-        NSLog(@"Timeout.");
+        NSLog(@"An error occurred. error: %@", error);
     }];
 }
 
 - (void)testPostCustomerName {
-    XCTestExpectation *except = [self expectationWithDescription:@"Timeout."];
+    XCTestExpectation *except = [self expectationWithDescription:@"Query timed out."];
 
-    NSString *name = @"bing";
+    NSString *name = @"hello_world";
 
     [api postCustomerName:name callback:^(NSDictionary *dict, NSError *error) {
         NSMutableDictionary *json = [dict valueForKey:@"json"];
+        NSString *custname = json[@"custname"];
 
-        BOOL result = [json[@"custname"] isEqual: name];
+        BOOL result = [custname isEqualToString: name];
 
-        XCTAssert(result, @"Occurred error. json: %@",json[@"custname"]);
+        XCTAssert(result, @"An error occurred. custname: %@", custname);
 
         [except fulfill];
     }];
 
     [self waitForExpectationsWithTimeout:5 handler:^(NSError * _Nullable error) {
-        NSLog(@"Timeout.");
+        NSLog(@"An error occurred. error: %@", error);
+    }];
+}
+
+- (void)testFetchImageWithCallback {
+    XCTestExpectation *except = [self expectationWithDescription:@"Query timed out."];
+
+    [api fetchImageWithCallback:^(UIImage *image, NSError *error) {
+        BOOL condition1 = (image != nil);
+        BOOL condition2 = (error == nil);
+
+        BOOL result = condition1 && condition2;
+
+        XCTAssert(result, @"An error occurred. image: %@, error: %@",
+                  image,
+                  error);
+
+        [except fulfill];
+    }];
+
+    [self waitForExpectationsWithTimeout:5 handler:^(NSError * _Nullable error) {
+        NSLog(@"An error occurred. error: %@", error);
     }];
 }
 
