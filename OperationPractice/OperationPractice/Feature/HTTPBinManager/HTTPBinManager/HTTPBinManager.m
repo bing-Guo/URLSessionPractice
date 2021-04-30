@@ -11,9 +11,10 @@
 
 @implementation HTTPBinManager
 
-+(instancetype) sharedInstance {
++ (instancetype)sharedInstance {
     static HTTPBinManager *instance = nil;
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
         instance = [[HTTPBinManager alloc] initPrivate];
     });
@@ -28,7 +29,7 @@
     return self;
 }
 
--(void)executeOperation {
+- (void)executeOperation {
     [self cancelAllOperations];
 
     operation = [[HTTPBinManagerOperation alloc] init];
@@ -37,7 +38,7 @@
     [self.queue addOperation: operation];
 }
 
--(void)cancelAllOperations {
+- (void)cancelAllOperations {
     [self.queue cancelAllOperations];
 
     [operation cancel];
@@ -46,7 +47,6 @@
 }
 
 // MARK: - HTTPBinManagerOperationDelegate
-
 - (void)HTTPBinManagerOperation:(HTTPBinManagerOperation *)HTTPBinManagerOperation progress:(float)progress error:(NSError *)error {
     [self.delegate HTTPBinManager:self progress:progress error:error];
 }

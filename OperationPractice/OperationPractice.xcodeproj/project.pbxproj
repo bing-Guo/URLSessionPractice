@@ -113,6 +113,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CF8D2A1263BE8470077187E /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				FC165F43262FFC6E00EC7AED /* main.m */,
+				3CF8D2A4263BE85B0077187E /* AppDelegate */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3CF8D2A4263BE85B0077187E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FC165F31262FFC6C00EC7AED /* AppDelegate.h */,
+				FC165F32262FFC6C00EC7AED /* AppDelegate.m */,
+				FC165F34262FFC6C00EC7AED /* SceneDelegate.h */,
+				FC165F35262FFC6C00EC7AED /* SceneDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3CF8D2A5263BE8700077187E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC165F3D262FFC6E00EC7AED /* Assets.xcassets */,
+				FC165F42262FFC6E00EC7AED /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3CF8D2AA263BE8B10077187E /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8D2B1263BE8CC0077187E /* View */,
+				FC165F8F263019E300EC7AED /* HTTPBinManager */,
+				FC165F37262FFC6C00EC7AED /* ViewController.h */,
+				FC165F38262FFC6C00EC7AED /* ViewController.m */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		3CF8D2B1263BE8CC0077187E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC165F3A262FFC6C00EC7AED /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FC165F25262FFC6C00EC7AED = {
 			isa = PBXGroup;
 			children = (
@@ -138,18 +186,10 @@
 		FC165F30262FFC6C00EC7AED /* OperationPractice */ = {
 			isa = PBXGroup;
 			children = (
-				FC165F8F263019E300EC7AED /* Service */,
-				FC165F31262FFC6C00EC7AED /* AppDelegate.h */,
-				FC165F32262FFC6C00EC7AED /* AppDelegate.m */,
-				FC165F34262FFC6C00EC7AED /* SceneDelegate.h */,
-				FC165F35262FFC6C00EC7AED /* SceneDelegate.m */,
-				FC165F37262FFC6C00EC7AED /* ViewController.h */,
-				FC165F38262FFC6C00EC7AED /* ViewController.m */,
-				FC165F3A262FFC6C00EC7AED /* Main.storyboard */,
-				FC165F3D262FFC6E00EC7AED /* Assets.xcassets */,
+				3CF8D2AA263BE8B10077187E /* Feature */,
+				3CF8D2A5263BE8700077187E /* Resource */,
+				3CF8D2A1263BE8470077187E /* Infrastructure */,
 				FC165F3F262FFC6E00EC7AED /* LaunchScreen.storyboard */,
-				FC165F42262FFC6E00EC7AED /* Info.plist */,
-				FC165F43262FFC6E00EC7AED /* main.m */,
 			);
 			path = OperationPractice;
 			sourceTree = "<group>";
@@ -173,21 +213,21 @@
 			path = OperationPracticeUITests;
 			sourceTree = "<group>";
 		};
-		FC165F8F263019E300EC7AED /* Service */ = {
+		FC165F8F263019E300EC7AED /* HTTPBinManager */ = {
 			isa = PBXGroup;
 			children = (
 				FC165F90263019F100EC7AED /* HTTPBinManager */,
 				FC165F91263019FA00EC7AED /* HTTPBinManagerOperation */,
 			);
-			path = Service;
+			path = HTTPBinManager;
 			sourceTree = "<group>";
 		};
 		FC165F90263019F100EC7AED /* HTTPBinManager */ = {
 			isa = PBXGroup;
 			children = (
+				FC165F8E263019D100EC7AED /* HTTPBinManagerDelegate.h */,
 				FC165F69262FFC9200EC7AED /* HTTPBinManager.h */,
 				FC165F6A262FFD1400EC7AED /* HTTPBinManager.m */,
-				FC165F8E263019D100EC7AED /* HTTPBinManagerDelegate.h */,
 			);
 			path = HTTPBinManager;
 			sourceTree = "<group>";
@@ -463,7 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -516,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -530,8 +570,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4HTHZYDXC;
-				INFOPLIST_FILE = OperationPractice/Info.plist;
+				DEVELOPMENT_TEAM = 435AM725KY;
+				INFOPLIST_FILE = OperationPractice/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,8 +588,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4HTHZYDXC;
-				INFOPLIST_FILE = OperationPractice/Info.plist;
+				DEVELOPMENT_TEAM = 435AM725KY;
+				INFOPLIST_FILE = OperationPractice/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

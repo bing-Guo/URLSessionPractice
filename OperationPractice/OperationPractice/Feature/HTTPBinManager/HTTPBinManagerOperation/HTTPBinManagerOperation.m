@@ -11,7 +11,7 @@
 
 @implementation HTTPBinManagerOperation
 
--(void)main {
+- (void)main {
     @autoreleasepool {
         Httpbin *api = [[Httpbin alloc] init];
 
@@ -61,7 +61,7 @@
     }
 }
 
--(void)cancel {
+- (void)cancel {
     [super cancel];
 
     if (self.semaphore != nil) {

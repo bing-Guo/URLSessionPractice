@@ -21,30 +21,34 @@
 
 @implementation ViewController
 
+@synthesize progressView;
+@synthesize startButton;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     isRunning = NO;
 
-    [self setupView];
+    [self setupUI];
     [self setupManager];
 }
 
-// MARK: - Setup
+// MARK: - Setup UI
+- (void)setupUI {
+    [startButton addTarget: self
+                     action: @selector(handleStartButtonClick:)
+           forControlEvents: UIControlEventTouchUpInside];
+    [startButton setTitle:@"START" forState:UIControlStateNormal];
 
--(void)setupView {
-    [_startButton addTarget:self action:@selector(handleStartButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [_startButton setTitle:@"START" forState:UIControlStateNormal];
-
-    [_progressView setProgress:0.0f];
+    [progressView setProgress:0.0f];
 }
 
--(void)setupManager {
+- (void)setupManager {
     manager = [HTTPBinManager sharedInstance];
     manager.delegate = self;
 }
 
--(void)handleStartButtonClick:(id)sender {
+- (void)handleStartButtonClick:(id)sender {
     if(isRunning) {
         [self cancelOperation];
     } else {
@@ -54,41 +58,38 @@
     isRunning = !isRunning;
 }
 
-// MARK: - Update Operation State
-
--(void)executeOperation {
-    [_progressView setProgress:0.0f];
-    [_startButton setTitle:@"CANCEL" forState:UIControlStateNormal];
+// MARK: - Activate
+- (void)executeOperation {
+    [progressView setProgress:0.0f];
+    [startButton setTitle:@"CANCEL" forState:UIControlStateNormal];
 
     [manager executeOperation];
 }
 
--(void)cancelOperation {
-    [_progressView setProgress:0.0f];
-    [_startButton setTitle:@"START" forState:UIControlStateNormal];
+- (void)cancelOperation {
+    [progressView setProgress:0.0f];
+    [startButton setTitle:@"START" forState:UIControlStateNormal];
 
     [manager cancelAllOperations];
 }
 
--(void)completedOperation {
-    [_startButton setTitle:@"RESTART" forState:UIControlStateNormal];
+- (void)completedOperation {
+    [startButton setTitle:@"RESTART" forState:UIControlStateNormal];
 }
 
 // MARK: - HTTPBinManagerDelegate
-
-- (void)HTTPBinManager:(HTTPBinManager *)HTTPBinManager progress:(float)progress error:(NSError *)error {
-    [_progressView setProgress:progress];
+- (void)HTTPBinManager:(HTTPBinManager *)HTTPBinManager
+              progress:(float)progress
+                 error:(NSError *)error
+{
+    [progressView setProgress:progress];
 
     if(progress == 1.0f) {
         [self completedOperation];
     }
-
-    NSLog(@"🐯 progress: %f", progress);
-    NSLog(@"🐯 error: %@", error);
 }
 
 - (void)HTTPBinManager:(HTTPBinManager *)HTTPBinManager didCancelOperationQueue:(NSOperationQueue *)queue {
-    NSLog(@"🐯 Queue is cancelled");
 }
 
 @end

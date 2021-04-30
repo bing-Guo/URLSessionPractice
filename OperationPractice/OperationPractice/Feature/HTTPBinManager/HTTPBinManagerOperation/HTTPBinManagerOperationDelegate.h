@@ -12,7 +12,7 @@
 
 @protocol HTTPBinManagerOperationDelegate <NSObject>
 
--(void) HTTPBinManagerOperation:(HTTPBinManagerOperation *)HTTPBinManagerOperation progress:(float)progress error:(NSError *)error;
+- (void)HTTPBinManagerOperation:(HTTPBinManagerOperation *)HTTPBinManagerOperation progress:(float)progress error:(NSError *)error;
 
 @end
 

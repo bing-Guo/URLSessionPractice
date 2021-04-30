@@ -12,8 +12,11 @@
 
 @protocol HTTPBinManagerDelegate <NSObject>
 
--(void) HTTPBinManager:(HTTPBinManager *)HTTPBinManager progress:(float)progress error:(NSError *)error;
--(void) HTTPBinManager:(HTTPBinManager *)HTTPBinManager didCancelOperationQueue:(NSOperationQueue *)queue;
+- (void)HTTPBinManager:(HTTPBinManager *)HTTPBinManager
+              progress:(float)progress
+                 error:(NSError *)error;
+
+- (void)HTTPBinManager:(HTTPBinManager *)HTTPBinManager didCancelOperationQueue:(NSOperationQueue *)queue;
 
 @end
 

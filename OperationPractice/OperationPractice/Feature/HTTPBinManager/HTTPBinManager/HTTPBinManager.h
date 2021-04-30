@@ -18,12 +18,12 @@
 @property (weak, nonatomic) id <HTTPBinManagerDelegate> delegate;
 @property NSOperationQueue *queue;
 
-+(instancetype) sharedInstance;
-+(instancetype) new UNAVAILABLE_ATTRIBUTE;
++ (instancetype)sharedInstance;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
 
--(instancetype) init UNAVAILABLE_ATTRIBUTE;
--(void) executeOperation;
--(void) cancelAllOperations;
+- (void)executeOperation;
+- (void)cancelAllOperations;
 
 @end
 
