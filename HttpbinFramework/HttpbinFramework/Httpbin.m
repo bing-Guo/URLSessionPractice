@@ -7,18 +7,16 @@
 
 #import <Foundation/Foundation.h>
 #import "Httpbin.h"
+#import "HTTPBinAPI.h"
+#import "NSMutableURLRequest+API.h"
 
 @implementation Httpbin
 
 - (void)fetchGetResponseWithCallback:(void(^)(NSDictionary *, NSError *))callback {
     NSURL *url = [NSURL URLWithString:@"http://httpbin.org/get"];
 
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request setHTTPMethod:@"GET"];
-    [request setTimeoutInterval:10.0];
-
-    NSURLSession *session = [NSURLSession sharedSession];
-
+    NSURLSession *session = [[HTTPBinAPI shared] mainSession];
+    NSMutableURLRequest *request = [NSMutableURLRequest APIRequestWithURL:url method:@"GET"];
     NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if(error) {
             callback(NULL, error);
@@ -32,23 +30,12 @@
     [task resume];
 }
 
-- (void) postCustomerName:(NSString *)name callback:(void (^)(NSDictionary *dict, NSError *error))callback {
+- (void)postCustomerName:(NSString *)name callback:(void (^)(NSDictionary *dict, NSError *error))callback {
     NSURL *url = [NSURL URLWithString:@"http://httpbin.org/post"];
-    NSError *error;
 
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request setHTTPMethod:@"POST"];
-    [request setTimeoutInterval:10.0];
-
-    NSMutableDictionary *mapData = [[NSMutableDictionary alloc] init];
-    [mapData setValue:name forKey:@"custname"];
-
-    NSData *postData = [NSJSONSerialization dataWithJSONObject:mapData options:NSJSONWritingPrettyPrinted error:&error];
-    [request setHTTPBody:postData];
-
-    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    sessionConfiguration.HTTPAdditionalHeaders = @{ @"Content-Type"  : @"application/json" };
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+    NSDictionary *bodyData = @{ @"custname" : name };
+    NSURLSession *session = [[HTTPBinAPI shared] mainSession];
+    NSMutableURLRequest *request = [NSMutableURLRequest APIRequestWithURL:url method:@"POST" body:bodyData];
 
     NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if(error) {
@@ -63,14 +50,11 @@
     [task resume];
 }
 
-- (void) fetchImageWithCallback:(void (^)(UIImage *, NSError *))callback {
+- (void)fetchImageWithCallback:(void (^)(UIImage *, NSError *))callback {
     NSURL *url = [NSURL URLWithString:@"http://httpbin.org/image/png"];
 
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request setHTTPMethod:@"GET"];
-    [request setTimeoutInterval:10.0];
-
-    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSession *session = [[HTTPBinAPI shared] mainSession];
+    NSMutableURLRequest *request = [NSMutableURLRequest APIRequestWithURL:url method:@"GET"];
 
     NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if(error) {

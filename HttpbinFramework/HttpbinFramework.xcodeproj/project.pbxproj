@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3CCC5DB02640C84F00E90E67 /* HTTPBinAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCC5DAF2640C84F00E90E67 /* HTTPBinAPI.h */; };
+		3CCC5DC42640CC2D00E90E67 /* HTTPBinAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC5DC32640CC2D00E90E67 /* HTTPBinAPI.m */; };
+		3CCC5DC92640CC6200E90E67 /* NSMutableURLRequest+API.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCC5DC82640CC6200E90E67 /* NSMutableURLRequest+API.h */; };
+		3CCC5DCE2640CC7900E90E67 /* NSMutableURLRequest+API.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC5DCD2640CC7900E90E67 /* NSMutableURLRequest+API.m */; };
 		FC082E2126145DF4005C09C8 /* HttpbinFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC082E2026145DF4005C09C8 /* HttpbinFrameworkTests.m */; };
 		FC082E2326145DF4005C09C8 /* HttpbinFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = FC082E1526145DF4005C09C8 /* HttpbinFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC082E2F26146003005C09C8 /* Httpbin.h in Headers */ = {isa = PBXBuildFile; fileRef = FC082E2E26146003005C09C8 /* Httpbin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,14 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CCC5DAD2640C3E100E90E67 /* HttpbinFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpbinFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCC5DAE2640C3E100E90E67 /* HttpbinFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpbinFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCC5DAF2640C84F00E90E67 /* HTTPBinAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPBinAPI.h; sourceTree = "<group>"; };
+		3CCC5DC32640CC2D00E90E67 /* HTTPBinAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPBinAPI.m; sourceTree = "<group>"; };
+		3CCC5DC82640CC6200E90E67 /* NSMutableURLRequest+API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+API.h"; sourceTree = "<group>"; };
+		3CCC5DCD2640CC7900E90E67 /* NSMutableURLRequest+API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+API.m"; sourceTree = "<group>"; };
 		FC082E1526145DF4005C09C8 /* HttpbinFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpbinFramework.h; sourceTree = "<group>"; };
 		FC082E1626145DF4005C09C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC082E2026145DF4005C09C8 /* HttpbinFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpbinFrameworkTests.m; sourceTree = "<group>"; };
 		FC082E2226145DF4005C09C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC082E2E26146003005C09C8 /* Httpbin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Httpbin.h; sourceTree = "<group>"; };
 		FC082E3226146036005C09C8 /* Httpbin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Httpbin.m; sourceTree = "<group>"; };
-		FCCFD4E2262BD9D00009CB6E /* HttpbinFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpbinFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCCFD4E3262BD9D00009CB6E /* HttpbinFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpbinFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +79,8 @@
 			children = (
 				FC082E1426145DF4005C09C8 /* HttpbinFramework */,
 				FC082E1F26145DF4005C09C8 /* HttpbinFrameworkTests */,
-				FCCFD4E2262BD9D00009CB6E /* HttpbinFramework.framework */,
-				FCCFD4E3262BD9D00009CB6E /* HttpbinFrameworkTests.xctest */,
+				3CCC5DAD2640C3E100E90E67 /* HttpbinFramework.framework */,
+				3CCC5DAE2640C3E100E90E67 /* HttpbinFrameworkTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +91,10 @@
 				FC082E1626145DF4005C09C8 /* Info.plist */,
 				FC082E2E26146003005C09C8 /* Httpbin.h */,
 				FC082E3226146036005C09C8 /* Httpbin.m */,
+				3CCC5DAF2640C84F00E90E67 /* HTTPBinAPI.h */,
+				3CCC5DC32640CC2D00E90E67 /* HTTPBinAPI.m */,
+				3CCC5DC82640CC6200E90E67 /* NSMutableURLRequest+API.h */,
+				3CCC5DCD2640CC7900E90E67 /* NSMutableURLRequest+API.m */,
 			);
 			path = HttpbinFramework;
 			sourceTree = "<group>";
@@ -105,6 +117,8 @@
 			files = (
 				FC082E2326145DF4005C09C8 /* HttpbinFramework.h in Headers */,
 				FC082E2F26146003005C09C8 /* Httpbin.h in Headers */,
+				3CCC5DB02640C84F00E90E67 /* HTTPBinAPI.h in Headers */,
+				3CCC5DC92640CC6200E90E67 /* NSMutableURLRequest+API.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +140,7 @@
 			);
 			name = HttpbinFramework;
 			productName = HttpbinFramework;
-			productReference = FCCFD4E2262BD9D00009CB6E /* HttpbinFramework.framework */;
+			productReference = 3CCC5DAD2640C3E100E90E67 /* HttpbinFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FC082E1A26145DF4005C09C8 /* HttpbinFrameworkTests */ = {
@@ -144,7 +158,7 @@
 			);
 			name = HttpbinFrameworkTests;
 			productName = HttpbinFrameworkTests;
-			productReference = FCCFD4E3262BD9D00009CB6E /* HttpbinFrameworkTests.xctest */;
+			productReference = 3CCC5DAE2640C3E100E90E67 /* HttpbinFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -229,6 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCC5DC42640CC2D00E90E67 /* HTTPBinAPI.m in Sources */,
+				3CCC5DCE2640CC7900E90E67 /* NSMutableURLRequest+API.m in Sources */,
 				FC082E3326146036005C09C8 /* Httpbin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -365,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -381,7 +397,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				DEVELOPMENT_TEAM = 435AM725KY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -405,7 +421,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = V4HTHZYDXC;
+				DEVELOPMENT_TEAM = 435AM725KY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

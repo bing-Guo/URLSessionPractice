@@ -1,6 +1,0 @@
-framework module HttpbinFramework {
-  umbrella header "HttpbinFramework.h"
-
-  export *
-  module * { export * }
-}

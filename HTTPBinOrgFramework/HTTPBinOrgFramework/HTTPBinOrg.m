@@ -95,6 +95,4 @@ NSURLSessionTask *fetchImageWithCallbackTask;
     [fetchImageWithCallbackTask resume];
 }
 
-//@synthesize delegate;
-
 @end

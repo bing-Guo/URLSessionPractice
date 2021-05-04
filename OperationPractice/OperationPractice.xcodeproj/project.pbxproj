@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CCC5DDB2640E1E800E90E67 /* HttpbinFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC5DD72640E1D700E90E67 /* HttpbinFramework.xcframework */; };
+		3CCC5DDC2640E1E800E90E67 /* HttpbinFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC5DD72640E1D700E90E67 /* HttpbinFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC165F33262FFC6C00EC7AED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165F32262FFC6C00EC7AED /* AppDelegate.m */; };
 		FC165F36262FFC6C00EC7AED /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165F35262FFC6C00EC7AED /* SceneDelegate.m */; };
 		FC165F39262FFC6C00EC7AED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165F38262FFC6C00EC7AED /* ViewController.m */; };
@@ -18,8 +20,6 @@
 		FC165F59262FFC6E00EC7AED /* OperationPracticeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165F58262FFC6E00EC7AED /* OperationPracticeUITests.m */; };
 		FC165F6B262FFD1400EC7AED /* HTTPBinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165F6A262FFD1400EC7AED /* HTTPBinManager.m */; };
 		FC165F7F26300EFE00EC7AED /* HTTPBinManagerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165F7E26300EFE00EC7AED /* HTTPBinManagerOperation.m */; };
-		FC165FB426310A3B00EC7AED /* HttpbinFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC165FA826310A2F00EC7AED /* HttpbinFramework.xcframework */; };
-		FC165FB526310A3B00EC7AED /* HttpbinFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC165FA826310A2F00EC7AED /* HttpbinFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC165FBB26316C5400EC7AED /* MockHTTPBinManagerOperationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165FBA26316C5400EC7AED /* MockHTTPBinManagerOperationDelegate.m */; };
 		FC165FC126316C6E00EC7AED /* MockHTTPBinManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC165FC026316C6E00EC7AED /* MockHTTPBinManagerDelegate.m */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FC165FB526310A3B00EC7AED /* HttpbinFramework.xcframework in Embed Frameworks */,
+				3CCC5DDC2640E1E800E90E67 /* HttpbinFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3CCC5DD72640E1D700E90E67 /* HttpbinFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HttpbinFramework.xcframework; path = ../HttpbinFramework/build/HttpbinFramework.xcframework; sourceTree = "<group>"; };
 		FC165F2E262FFC6C00EC7AED /* OperationPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OperationPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC165F31262FFC6C00EC7AED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC165F32262FFC6C00EC7AED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		FC165F7D26300DC000EC7AED /* HTTPBinManagerOperationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPBinManagerOperationDelegate.h; sourceTree = "<group>"; };
 		FC165F7E26300EFE00EC7AED /* HTTPBinManagerOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPBinManagerOperation.m; sourceTree = "<group>"; };
 		FC165F8E263019D100EC7AED /* HTTPBinManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPBinManagerDelegate.h; sourceTree = "<group>"; };
-		FC165FA826310A2F00EC7AED /* HttpbinFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = HttpbinFramework.xcframework; sourceTree = "<group>"; };
 		FC165FBA26316C5400EC7AED /* MockHTTPBinManagerOperationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockHTTPBinManagerOperationDelegate.m; sourceTree = "<group>"; };
 		FC165FC026316C6E00EC7AED /* MockHTTPBinManagerDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockHTTPBinManagerDelegate.m; sourceTree = "<group>"; };
 		FC165FC426316CE800EC7AED /* MockHTTPBinManagerOperationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockHTTPBinManagerOperationDelegate.h; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC165FB426310A3B00EC7AED /* HttpbinFramework.xcframework in Frameworks */,
+				3CCC5DDB2640E1E800E90E67 /* HttpbinFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 		FC165F25262FFC6C00EC7AED = {
 			isa = PBXGroup;
 			children = (
-				FC165FA826310A2F00EC7AED /* HttpbinFramework.xcframework */,
+				3CCC5DD72640E1D700E90E67 /* HttpbinFramework.xcframework */,
 				FC165F30262FFC6C00EC7AED /* OperationPractice */,
 				FC165F4C262FFC6E00EC7AED /* OperationPracticeTests */,
 				FC165F57262FFC6E00EC7AED /* OperationPracticeUITests */,
@@ -607,7 +607,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4HTHZYDXC;
 				INFOPLIST_FILE = OperationPracticeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,7 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4HTHZYDXC;
 				INFOPLIST_FILE = OperationPracticeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
